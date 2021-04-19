@@ -1,0 +1,168 @@
+@import url(../fonts/Brandon/stylesheet.css);
+
+:root {
+    --bs-yellow: #ffbb00;
+}
+body {
+    font-family: 'Brandon Grotesque';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.hero {
+    background: url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+}
+.navbar-dark .navbar-toggler {
+    background-color: var(--bs-yellow);
+    border-radius: 0;
+
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 2.2em;
+    height: 2.5em;
+}
+.navbar-round-text {
+    font-size: 10px;
+    padding: 13px 2px;
+    font-weight: bold;
+}
+
+.section {
+    max-width: 990px;
+    margin: auto;
+}
+.services {
+    margin-top: -120px;
+}
+.service a {
+    border-width: 10px!important;
+}
+.service a span {
+    font-weight: 900;
+}
+.service a:hover {
+    filter: brightness(110%);
+}
+
+.middle-content h2 {
+    font-weight: 900;
+    color: #2b7050;
+}
+
+.pattern {
+    background: url(../img/pattern.jpg) no-repeat bottom center;
+    background-size: cover;
+    bottom: -30px;
+}
+.pattern hr {
+    height: 5px;
+    background-color: #000;
+    opacity: 1;
+    border-radius: 30px;
+}
+
+.box {
+    z-index: 1;
+    bottom: -30px;
+}
+.box h3 {
+    z-index: 1;
+    font-weight: 900;
+    line-height: 2.5rem;
+}
+.box a {
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 2rem;
+    background: #ffbb00;
+    padding: 0.4rem 0.9rem;
+}
+.box a:hover {
+    background: #000;
+
+}
+.triangles, .triangles div {
+    height: 65vw;
+}
+.triangles .one {
+    background: url(../img/tri1.jpg) no-repeat top left;
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0 100%);
+}
+.triangles .two {
+    background: url(../img/tri2.jpg) no-repeat bottom right;
+    background-size: cover;
+    clip-path: polygon(100% 100%, 100% 0%, 0% 100%, 0 100%);
+}
+.triangles h1 {
+    font-weight: 900;
+    max-width: 300px;
+}
+.triangles .one h1 {
+    bottom: 40vw;
+    left: 30vw;
+}
+.triangles .two h1 {
+    bottom: 9vw;
+    right: 40vw;
+}
+.triangles .two img {
+    bottom: 0;
+    right: 10vw;
+    width: 20vw;
+}
+
+footer {
+    background: #000 url(../img/footer-leaves.png) no-repeat top right;
+    color: #fff;
+}
+footer ul {
+    color: #ffbb00;
+    line-height: 1.6;
+}
+footer ul li a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+footer h5 {
+    color: #ffbb00;
+    border-bottom: 5px solid #ffbb00;
+    display: inline-flex;
+}
+footer ul li a i {
+    color: #ffbb00;
+    margin-right: 0.5rem;
+}
+footer ul li a:hover {
+    color: #ffbb00;
+}
+.footer-copyright {
+    background: #2b7050;
+    font-weight: 400;
+    font-size: 90%;
+}
+.footer-copyright ul {
+    padding-left: 0;
+}
+.footer-copyright ul li {
+    margin-left: 1.8rem;
+}
+.footer-copyright ul li a {
+    font-weight: 400;
+}
+.social-links a i {
+    color: #fff;
+    font-size: 1rem;
+}
+.social-links a:hover i {
+    color: #ffbb00;
+} 
+.footer-copyright img {
+    position: absolute;
+    bottom: 40px;
+    right: 5vw;
+}
