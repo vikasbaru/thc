@@ -10,23 +10,88 @@ body {
     font-display: swap;
 }
 .hero {
-    background: url(../img/banner.jpg) no-repeat;
+    background: url(../img/hero.jpg) no-repeat;
     background-size: cover;
 }
 .navbar-dark .navbar-toggler {
     background-color: var(--bs-yellow);
     border-radius: 0;
-
+    z-index: 3;
+    border: none;
+    box-shadow: none;
 }
 .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     width: 2.2em;
     height: 2.5em;
 }
+.navbar-dark .navbar-toggler.active {
+    position: fixed;
+    right: 2.25rem;
+    top: 0;
+}
+.navbar-dark .navbar-toggler svg,
+.navbar-dark .navbar-toggler.active .navbar-toggler-icon  {
+    opacity: 0;
+    display: none;
+}
+.navbar-dark .navbar-toggler.active svg {
+    opacity: 1;
+    display: inline-block;
+}
 .navbar-round-text {
     font-size: 10px;
     padding: 13px 2px;
     font-weight: bold;
+}
+#navbarHeader {
+    position: fixed;
+    background: #000 url(../img/top-leaves.png) no-repeat top left;
+    color: #ffbb00;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    z-index: 2;
+}
+#navbarHeader ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+#navbarHeader ul li a:hover {
+    color: #ffbb00;
+}
+#navbarHeader.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+body.menu-open {
+    height: 100vh;
+    overflow: hidden;
+}
+/********* Floating Social Bar ***********/
+.social-bar {
+    background: #ffbb00;
+    z-index: 3;
+}
+.social-bar ul li a {
+    padding: 0.7rem 0.6rem;
+    display: block;
+    color: #fff;
+}
+.social-bar ul li a:hover {
+    color: #000;
+}
+.social-bar ul li:last-child {
+    border-top: 1px solid #fff;
 }
 
 .section {
@@ -164,5 +229,44 @@ footer ul li a:hover {
 .footer-copyright img {
     position: absolute;
     bottom: 40px;
-    right: 5vw;
+    right: 4vw;
+}
+.murga {
+    max-width: 18vw;
+}
+
+@media (max-width: 991px) {
+    #navbarHeader {
+        font-size: 2rem;
+        background-size: 30%;
+    }
+    footer {
+        background-size: 30%; 
+    }
+    .top-leaves {
+        max-width: 30%;
+    }
+    .triangles {
+        height: auto;
+    }
+    .triangles > div {
+        position: relative!important;
+        clip-path: none!important;
+        height: 50vw;
+    }
+    .box, .pattern {
+        bottom: 0;
+    }
+    .pattern {
+        padding-bottom: 1rem;
+    }
+    .triangles .one h1 {
+        bottom: 9vw;
+        right: 40vw;
+    }
+}
+@media (max-width: 767px) {
+    #navbarHeader ul li {
+        list-style-type: none;
+    }
 }
