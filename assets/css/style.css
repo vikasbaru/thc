@@ -21,8 +21,28 @@ ul.list li::before {
   content: "• ";
   color: #ffbb00; /* or whatever color you prefer */
 }
+.no-bg {
+    background: none!important;
+}
+
 .hero {
     background: url(../img/hero.jpg) no-repeat;
+    background-size: cover;
+}
+.hero1 {
+    background: url(../img/hero1.jpg) no-repeat;
+    background-size: cover;
+}
+.hero2 {
+    background: url(../img/hero2.jpg) no-repeat;
+    background-size: cover;
+}
+.hero3 {
+    background: url(../img/hero3.jpg) no-repeat;
+    background-size: cover;
+}
+.hero4 {
+    background: url(../img/hero4.jpg) no-repeat;
     background-size: cover;
 }
 .navbar-dark .navbar-toggler {
@@ -257,12 +277,37 @@ footer ul li a:hover {
     border-radius: 0;
 }
 
+ul.address {
+    color: #ffbb00;
+    line-height: 1.6;
+    position: relative;
+}
+ul.address li a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 1.5rem;
+    display: block;
+}
+ul.address li a i {
+    color: #ffbb00;
+    margin-right: 0.5rem;
+    position: absolute;
+    left: 0;
+}
+ul.address li a:hover {
+    color: #ffbb00;
+}
+
 /********** Inner pages **********/
 .img-box h4 {
     background-color: #ffbb00;
 }
 .image-section {
     margin-top: -5rem;
+}
+.contact-form {
+    background: #e0592a;
 }
 
 /********** Responsive *********/
