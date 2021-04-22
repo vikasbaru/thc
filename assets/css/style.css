@@ -247,6 +247,16 @@ footer ul li a:hover {
     max-width: 18vw;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    background-color: #ffbb00;
+    border: none;
+    border-radius: 0;
+}
+
 /********** Inner pages **********/
 .img-box h4 {
     background-color: #ffbb00;
