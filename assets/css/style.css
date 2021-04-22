@@ -9,6 +9,18 @@ body {
     font-style: normal;
     font-display: swap;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+ul.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.list li::before {
+  content: "• ";
+  color: #ffbb00; /* or whatever color you prefer */
+}
 .hero {
     background: url(../img/hero.jpg) no-repeat;
     background-size: cover;
@@ -235,6 +247,15 @@ footer ul li a:hover {
     max-width: 18vw;
 }
 
+/********** Inner pages **********/
+.img-box h4 {
+    background-color: #ffbb00;
+}
+.image-section {
+    margin-top: -5rem;
+}
+
+/********** Responsive *********/
 @media (max-width: 991px) {
     #navbarHeader {
         font-size: 2rem;
@@ -268,5 +289,8 @@ footer ul li a:hover {
 @media (max-width: 767px) {
     #navbarHeader ul li {
         list-style-type: none;
+    }
+    .image-section {
+        margin-top: 2rem;
     }
 }
