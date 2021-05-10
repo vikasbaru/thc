@@ -1,0 +1,53 @@
+@import url(../fonts/Brandon/stylesheet.css);
+
+:root {
+    --bs-yellow: #ffbb00;
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Brandon Grotesque';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    height: 100%;
+    color: #000;
+}
+
+main {
+    background: #fab311 url(../img/bg.jpg) no-repeat top center;
+    background-size: auto 75vh;
+}
+h1 {
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+}
+.form-wrap {
+    background: #000;
+}
+h2 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 8vw;
+        padding-top: 15vh;
+    }
+    h2 {
+        font-size: 7vw;
+    }
+    main {
+        background-position: center 15%;
+    }
+    .water {
+        width: 120px;
+    }
+}
+@media (max-width: 656px) {
+    h1 {
+        font-size: 10vw;
+    }
+}
